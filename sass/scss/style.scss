@@ -1,0 +1,645 @@
+@mixin tamaño($height,$width){
+    height: $height;
+    width: $width;
+}
+
+$rojo: #C3391A;
+$rosa: #f6e1dc;
+
+body{
+    background-color: $rosa;
+    font-family: 'Dosis', sans-serif;
+    margin: 0px;
+}
+
+header{
+    font-family: dosis;
+    font-size: 20pt;
+
+    .header__menu--responsive{
+        display: none;
+    }
+
+    nav{
+        padding: 0px;
+    }
+
+    .header__menu{
+        padding-bottom: 15px;
+    
+        a{
+            color: $rojo;
+            text-decoration: none;
+        }
+    
+        a:hover{
+            border-bottom: solid;
+            width: 2px;
+        }
+    
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            list-style-type: none;
+            margin: 0px;
+        }
+    }
+
+    .header__logo--tamaño{
+        width: 15%;
+        margin: 0px 500px;
+        padding: 0px;
+    }
+
+    #side-menu {
+        display: none;
+    }
+    
+}
+
+main{
+    background-image: url(/multimedia/fondoshdos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        color: $rojo;
+        font-weight: 400;
+        font-size: 40pt;
+    }
+
+    .titulos{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+        margin: 0px;
+    }
+
+    .logo{
+        width: 30vw;
+        height: 50vh;
+        margin: 50px 400px;
+    }
+}
+
+
+#index__h1{
+    margin-left: 60px;
+    padding-bottom: 0px;
+    font-size: 50pt;  
+}
+
+#index__h2{
+    color: $rojo;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 40pt;
+    margin-left: 60px;
+}
+
+#index__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px 80px 0px;
+
+    .index__bienvenida{
+        background-color: $rosa;
+        font-weight: 200;
+        @include tamaño(600px,400px);
+        font-size: 25pt;
+        margin: 0px;
+    
+        p{
+            color: $rojo;
+            padding: 20px;
+        }
+    }
+}
+
+.index--slide{
+    padding-left: 150px;
+    width: 500px;
+}
+
+.main__productos{
+    background-image: url(/multimedia/fondoshdos.jpg);
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px 80px 0px;
+
+    .main__productos--grid{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 350px;
+        grid-column-gap: 80px;
+        margin: 100px 400px;
+        
+        title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px;
+            padding: 20px 50px;
+            color: $rojo;
+            font-size: 25pt;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .productos__descripcion{
+
+        #foca{
+            display: grid;
+            grid-template-columns: 400px 300px;
+            grid-template-rows: 350px;
+            grid-column-gap: 100px;
+            padding: 200px 100px;
+        }
+
+        #pan{
+            @extend #foca;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            background-color:$rosa;
+            font-weight: 200;
+            width: 40vw;
+            height: 20vh;
+            font-size: 15pt;
+            overflow: auto;
+            color: $rojo;
+        }
+    }
+}
+
+.main__materiales{
+    background-image: url(/multimedia/fondoshdos.jpg);
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 50px 0px 80px 0px;
+
+    .main__materiales--fotos{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .main__materiales--texto{
+        margin: 50px 100px;
+        padding: 0px 65px;
+    
+        p{
+            color: $rojo;
+            font-size: 25pt;
+        }
+    }
+}
+
+.main__quienes{
+    background-image: url(/multimedia/fondoshdos.jpg);
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1{
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 0px 500px;
+        padding-top: 50px;
+    }
+
+    img{
+        width: 30%;
+    }
+
+    .div__quienes{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 0px 80px 0px;
+    }
+    
+    .div__quienes--texto{
+        border: solid 5px $rojo;
+        padding: 10px;
+        margin-left: 50px;
+        width: 50%;
+    
+        p{
+            color: black;
+            font-size: 25pt;
+        }
+    }
+}
+
+.main__contacto{
+    background-image: url(/multimedia/fondoshdos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 80px 0px;
+
+    .main__contacto--formulario{
+        background-color: $rojo;
+        color: $rosa;
+        @include tamaño(900px,500px);
+        font-size: 16pt;
+        padding: 50px;
+        overflow: hidden;
+        animation-name: formulario;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+    }
+}
+
+
+footer{
+    padding: 15px;
+    background-color: $rojo;
+
+    h2 {
+        color: #f6e1dc;
+        font-weight: 600;
+        font-size: 20pt;
+    }
+}
+
+@keyframes formulario{
+    0%{ width: 0px;
+        height: 0vh;
+        transform: scale(1);
+        overflow: hidden;
+    }
+  
+    50%{ width: 300px;
+         height: 40vh;
+         transform: scale(1.5);
+    }
+} 
+
+@media only screen and (max-width: 768px){
+    body{
+        background-color: $rosa;
+        width: 95vw;
+        height: 95vh;
+    }
+
+    .header__menu{
+        
+        .header__menu--responsive{
+            display: inline;
+        }
+
+        #menu--responisve{
+
+            a{
+                color: $rojo;
+            }
+        }
+
+        .header__menu--grande{
+
+            display: none;
+        }
+    } 
+
+    main{
+        background-image: none;
+
+        .logo{
+            display: none;
+        }
+    }
+
+    #index__h1{
+        margin: 0;
+    }
+
+    #index__h2{
+        margin: 0;
+    }
+
+    #index__main{
+    
+        .index__bienvenida{
+            width: 85vw;
+            height: 100vh;
+            margin: 50px 0px 50px 0px;
+            overflow: hidden;
+            font-size: 20pt;
+        }
+    }
+    
+    .index--slide{
+        margin: 50px 0px 100px 0px;
+        padding: 10px;
+        width: 85vw;
+        height: 85vh;
+    }
+
+    .main__productos{
+        background-image: none;
+    
+        .main__productos--grid{
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 35px;
+            grid-column-gap: 8px;
+            margin: 100px 0px 200px 10px;
+
+            h1{
+                font-size: 10pt;
+            }
+
+            img{
+                width: 40vw;
+                height: 40vh;
+            }
+            
+            title{
+                font-size: 15pt;
+            }
+        }
+
+        .productos__descripcion{
+
+            #foca{
+                display: grid;
+                grid-template-columns: 150px 50px;
+                grid-template-rows: 100px;
+                grid-column-gap: 50px;
+                margin-left: 10px;
+                padding: 100px 0;
+                
+            }
+    
+            #pan{
+                display: grid;
+                grid-template-columns: 150px 50px;
+                grid-template-rows: 100px;
+                grid-column-gap: 50px;
+                margin-left: 10px;
+                padding: 100px 0;
+            }
+    
+            img{
+                width: 40vw;
+                height: 40vh;
+            }
+        }
+
+    }   
+
+    .main__materiales{
+        background-image: none;
+        margin: 0px;
+        padding: 0;
+
+        h1{
+            font-size: 30pt;
+        }
+
+        .main__materiales--fotos{
+            width: 70vw;
+            height: 70vh;
+            margin: 0 0 500px 50px;
+        }
+
+        .main__materiales--texto{
+            margin: 0;
+            padding: 100px 0;
+        
+            p{
+                color: $rojo;
+                font-size: 15pt;
+                overflow: auto;
+            }
+        }
+    }
+
+    .main__quienes{
+        background-image: none;
+        margin:0px;
+        padding: 0 0 100px 0;
+
+        h1{
+            display: flex;
+            justify-content: center;
+            margin: 0px 0px 0px 200px;
+            padding-top: 50px;
+            font-size: 30pt;
+        }
+    
+        img{
+            width: 40vw;
+        }
+    
+        .div__quienes{
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .div__quienes--texto{
+            border: solid 5px $rojo;
+            padding: 10px;
+            margin-left: 10px;
+            width: 40vw;
+            height: 50vh;
+            overflow: auto;
+        
+            p{
+                font-size: 15pt;
+            }
+        }
+        
+    }
+
+    .main__contacto{
+        background-image: none;
+        padding: 50px 0px 100px 0px;
+        margin-bottom: 100px;
+
+        h1{
+            font-size: 30pt;
+        }
+    
+        .main__contacto--formulario{
+            background-color: $rojo;
+            color: $rosa;
+            @include tamaño(900px,50vh);
+            font-size: 16pt;
+            padding: 50px;
+            overflow: hidden;
+            animation-name: none;
+        }
+    }
+
+    footer{
+        width: 95vw;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+
+    body{
+        background-color: $rosa;
+        width: 95vw;
+        height: 95vh;
+    }
+
+    .header__menu{
+        
+        .header__menu--responsive{
+            display: inline;
+        }
+
+        #menu--responisve{
+
+            a{
+                color: $rojo;
+            }
+        }
+
+        .header__menu--grande{
+
+            display: none;
+        }
+    }
+
+    main{
+        background-image: none;
+    }
+
+    #index__h1{
+        margin: 0;
+    }
+
+    #index__h2{
+        margin: 0;
+    }
+
+    #index__main{
+    
+        .index__bienvenida{
+            width: 85vw;
+            height: 70vh;
+            margin: 0px;
+            overflow: hidden;
+            font-size: 20pt;
+        }
+    }
+    
+    .index--slide{
+        margin: 50px 0px 400px 0px;
+        padding: 10px;
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .main__productos{
+        background-image: none;
+    
+        .main__productos--grid{
+            display: grid;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 35px;
+            grid-column-gap: 100px;
+            margin: 80px 0px 200px 100px;
+
+            h1{
+                font-size: 20pt;
+            }
+
+            img{
+                width: 30vw;
+                height: 30vh;
+            }
+            
+            title{
+                font-size: 30pt;
+            }
+        }
+
+        .productos__descripcion{
+            background-color: none;
+            margin-top: 300px;
+
+            #foca{
+                display: grid;
+                grid-template-columns: 150px 50px;
+                grid-template-rows: 100px;
+                grid-column-gap: 50px;
+                margin-left: 10px;
+                padding: 100px 0;
+                
+            }
+    
+            #pan{
+                display: grid;
+                grid-template-columns: 150px 50px;
+                grid-template-rows: 100px;
+                grid-column-gap: 50px;
+                margin-left: 10px;
+                padding: 100px 0;
+            }
+    
+            img{
+                width: 25vw;
+                height: 25vh;
+            }
+
+            p{
+                overflow: hidden;
+                width: 30vw;
+                height: 10vh;
+            }
+        }
+
+    }   
+
+    .main__materiales{
+        background-image: none;
+    }
+
+    .main__quienes{
+        background-image: none;
+    }
+
+    .main__contacto{
+        background-image: none;
+        padding: 50px 0px 100px 0px;
+        margin-bottom: 100px;
+    
+        .main__contacto--formulario{
+            background-color: $rojo;
+            color: $rosa;
+            @include tamaño(900px,50vh);
+            font-size: 16pt;
+            padding: 50px;
+            overflow: hidden;
+            animation-name: none;
+        }
+    }
+
+    footer{
+        width: 95vw;
+    }
+}

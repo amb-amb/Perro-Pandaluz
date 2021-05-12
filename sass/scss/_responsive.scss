@@ -1,0 +1,38 @@
+@media only screen and (max-width: 576px){
+    body{
+        background-color: #FFE7EA;
+        width: 95vw;
+        height: 95vh;
+    }
+
+   .header__menu{
+        display: inline-flex;
+   }
+
+    main{
+        background-image: none;
+    }
+
+    #index__main{
+    
+        .index__bienvenida{
+            width: 85vw;
+            height: 100vh;
+            margin: 50px 0px 50px 0px;
+            overflow: hidden;
+            font-size: 20pt;
+        }
+    }
+    
+    .index--slide{
+        margin: 50px 0px 10px 0px;
+        padding: 10px;
+        width: 85vw;
+        height: 85vh;
+    }
+
+    footer{
+        width: 95vw;
+    }
+
+}
