@@ -127,17 +127,37 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 0px 80px 0px; }
+  .main__materiales #main__materiales--masama {
+    margin: 200px 100px 50px 100px;
+    padding: 0px 65px; }
+    .main__materiales #main__materiales--masama h2 {
+      font-size: 25pt; }
+    .main__materiales #main__materiales--masama p {
+      color: #C3391A;
+      font-size: 18pt;
+      background-color: #f6e1dc;
+      font-weight: 200;
+      width: 40vw;
+      height: 55vh;
+      overflow: auto; }
   .main__materiales .main__materiales--fotos {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     width: 100%; }
   .main__materiales .main__materiales--texto {
-    margin: 50px 100px;
+    margin: 50px 100px 50px 100px;
     padding: 0px 65px; }
+    .main__materiales .main__materiales--texto h2 {
+      font-size: 25pt; }
     .main__materiales .main__materiales--texto p {
       color: #C3391A;
-      font-size: 25pt; }
+      font-size: 18pt;
+      background-color: #f6e1dc;
+      font-weight: 200;
+      width: 60vw;
+      height: 20vh;
+      overflow: auto; }
 
 .main__quienes {
   background-image: url(/multimedia/fondoshdos.jpg);
