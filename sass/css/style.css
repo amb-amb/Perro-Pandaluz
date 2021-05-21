@@ -12,13 +12,17 @@ header {
   header nav {
     padding: 0px; }
   header .header__menu {
-    padding-bottom: 15px; }
+    padding-top: 10px; }
     header .header__menu a {
       color: #C3391A;
       text-decoration: none; }
     header .header__menu a:hover {
       border-bottom: solid;
       width: 2px; }
+    header .header__menu .navbar-brand {
+      padding-bottom: 15px; }
+    header .header__menu .navbar-brand:hover {
+      border-bottom: none; }
     header .header__menu ul {
       display: flex;
       flex-flow: row nowrap;
@@ -35,7 +39,9 @@ header {
 main {
   background-image: url(/multimedia/fondoshdos.jpg);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin: 0px;
+  padding: 0 0 200px 0; }
   main h1 {
     color: #C3391A;
     font-weight: 400;
@@ -46,9 +52,10 @@ main {
     padding-bottom: 40px;
     margin: 0px; }
   main .logo {
-    width: 30vw;
-    height: 50vh;
-    margin: 50px 400px; }
+    height: 40vw;
+    width: 50vw;
+    margin: 50px 300px;
+    opacity: 90%; }
 
 #index__h1 {
   margin-left: 60px;
@@ -69,14 +76,15 @@ main {
   padding: 50px 0px 80px 0px; }
   #index__main .index__bienvenida {
     background-color: #f6e1dc;
+    opacity: 90%;
     font-weight: 200;
     height: 600px;
-    width: 400px;
+    width: 500px;
     font-size: 25pt;
     margin: 0px; }
     #index__main .index__bienvenida p {
       color: #C3391A;
-      padding: 20px; }
+      padding: 40px; }
 
 .index--slide {
   padding-left: 150px;
@@ -105,15 +113,17 @@ main {
   .main__productos img {
     width: 100%; }
   .main__productos .productos__descripcion #foca, .main__productos .productos__descripcion #pan {
+    background-color: #f6e1dc;
     display: grid;
     grid-template-columns: 400px 300px;
     grid-template-rows: 350px;
     grid-column-gap: 100px;
     padding: 200px 100px; }
+  .main__productos .productos__descripcion #pan {
+    background-color: none; }
   .main__productos .productos__descripcion img {
     width: 100%; }
   .main__productos .productos__descripcion p {
-    background-color: #f6e1dc;
     font-weight: 200;
     width: 40vw;
     height: 20vh;
@@ -195,6 +205,8 @@ main {
   align-items: center;
   justify-content: center;
   padding: 50px 0px 80px 0px; }
+  .main__contacto p {
+    font-size: 20pt; }
   .main__contacto .main__contacto--formulario {
     background-color: #C3391A;
     color: #f6e1dc;
@@ -209,12 +221,33 @@ main {
     animation-timing-function: linear; }
 
 footer {
-  padding: 15px;
-  background-color: #C3391A; }
-  footer h2 {
-    color: #f6e1dc;
-    font-weight: 600;
-    font-size: 20pt; }
+  background-color: #C3391A;
+  margin: 0px; }
+  footer #footer_contacto {
+    padding: 50px; }
+    footer #footer_contacto #footer_mail h2 {
+      color: #f6e1dc;
+      font-weight: 300;
+      font-size: 20pt; }
+    footer #footer_contacto #footer_mail p {
+      font-size: 15pt;
+      padding: 20px 40px;
+      margin: 0px;
+      color: #f6e1dc; }
+    footer #footer_contacto #footer_redes h2 {
+      color: #f6e1dc;
+      font-weight: 300;
+      font-size: 20pt;
+      padding: 5px 0 20px 110px; }
+    footer #footer_contacto #footer_redes .footer_icono {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 20pt; }
+      footer #footer_contacto #footer_redes .footer_icono a {
+        color: #f6e1dc; }
+      footer #footer_contacto #footer_redes .footer_icono a:hover {
+        opacity: 50%; }
 
 @keyframes formulario {
   0% {

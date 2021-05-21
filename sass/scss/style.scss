@@ -25,7 +25,7 @@ header{
     }
 
     .header__menu{
-        padding-bottom: 15px;
+        padding-top: 10px;
     
         a{
             color: $rojo;
@@ -35,6 +35,14 @@ header{
         a:hover{
             border-bottom: solid;
             width: 2px;
+        }
+
+        .navbar-brand{
+            padding-bottom: 15px;
+        }
+
+        .navbar-brand:hover{
+            border-bottom: none;
         }
     
         ul{
@@ -62,6 +70,8 @@ main{
     background-image: url(/multimedia/fondoshdos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0px;
+    padding: 0 0 200px 0;
 
     h1{
         color: $rojo;
@@ -77,9 +87,9 @@ main{
     }
 
     .logo{
-        width: 30vw;
-        height: 50vh;
-        margin: 50px 400px;
+        @include tamaño (40vw,50vw);
+        margin: 50px 300px;
+        opacity: 90%;
     }
 }
 
@@ -106,14 +116,15 @@ main{
 
     .index__bienvenida{
         background-color: $rosa;
+        opacity: 90%;
         font-weight: 200;
-        @include tamaño(600px,400px);
+        @include tamaño(600px,500px);
         font-size: 25pt;
         margin: 0px;
     
         p{
             color: $rojo;
-            padding: 20px;
+            padding: 40px;
         }
     }
 }
@@ -155,6 +166,7 @@ main{
     .productos__descripcion{
 
         #foca{
+            background-color: $rosa;
             display: grid;
             grid-template-columns: 400px 300px;
             grid-template-rows: 350px;
@@ -164,6 +176,7 @@ main{
 
         #pan{
             @extend #foca;
+            background-color: none;
         }
 
         img{
@@ -171,7 +184,6 @@ main{
         }
 
         p{
-            background-color:$rosa;
             font-weight: 200;
             width: 40vw;
             height: 20vh;
@@ -284,6 +296,10 @@ main{
     justify-content: center;
     padding: 50px 0px 80px 0px;
 
+    p{
+        font-size: 20pt;
+    }
+
     .main__contacto--formulario{
         background-color: $rojo;
         color: $rosa;
@@ -300,13 +316,52 @@ main{
 
 
 footer{
-    padding: 15px;
     background-color: $rojo;
+    margin: 0px;
 
-    h2 {
-        color: #f6e1dc;
-        font-weight: 600;
-        font-size: 20pt;
+    #footer_contacto{
+        padding: 50px;
+
+        #footer_mail{
+
+            h2 {
+                color: $rosa;
+                font-weight: 300;
+                font-size: 20pt;
+            }
+
+            p{
+                font-size: 15pt;
+                padding: 20px 40px;
+                margin: 0px;
+                color: $rosa;
+            }
+        }
+
+        #footer_redes{
+
+            h2 {
+                color: $rosa;
+                font-weight: 300;
+                font-size: 20pt;
+                padding: 5px 0 20px 110px;
+            }
+
+            .footer_icono{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                font-size: 20pt;
+
+                a{
+                    color: $rosa;
+                }
+    
+                a:hover{
+                    opacity: 50%;
+                }
+            }
+        }
     }
 }
 
@@ -508,7 +563,7 @@ footer{
         h1{
             font-size: 30pt;
         }
-    
+
         .main__contacto--formulario{
             background-color: $rojo;
             color: $rosa;
