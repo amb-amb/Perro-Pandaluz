@@ -37,7 +37,7 @@ header {
     display: none; }
 
 main {
-  background-image: url(/multimedia/fondoshdos.jpg);
+  background-image: url(./multimedia/fondoshdos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
@@ -91,7 +91,7 @@ main {
   width: 500px; }
 
 .main__productos {
-  background-image: url(/multimedia/fondoshdos.jpg);
+  background-image: url(./multimedia/fondoshdos.jpg);
   padding-bottom: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,7 +132,7 @@ main {
     color: #C3391A; }
 
 .main__materiales {
-  background-image: url(/multimedia/fondoshdos.jpg);
+  background-image: url(./multimedia/fondoshdos.jpg);
   padding-bottom: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,7 +170,7 @@ main {
       overflow: auto; }
 
 .main__quienes {
-  background-image: url(/multimedia/fondoshdos.jpg);
+  background-image: url(./multimedia/fondoshdos.jpg);
   padding-bottom: 200px;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -197,7 +197,7 @@ main {
       font-size: 25pt; }
 
 .main__contacto {
-  background-image: url(/multimedia/fondoshdos.jpg);
+  background-image: url(./multimedia/fondoshdos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
