@@ -37,7 +37,7 @@ header {
     display: none; }
 
 main {
-  background-image: url(./multimedia/fondoshdos.jpg);
+  background-image: url(/multimedia/fondoshdos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0px;
