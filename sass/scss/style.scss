@@ -67,7 +67,7 @@ header{
 }
 
 main{
-    background-image: url(./multimedia/fondoshdos.jpg);
+    background-image: url(/multimedia/fondoshdos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
@@ -76,7 +76,8 @@ main{
     h1{
         color: $rojo;
         font-weight: 400;
-        font-size: 40pt;
+        font-size: 50pt;
+        text-shadow: 3px 3px 5px $rosa;
     }
 
     .titulos{
@@ -93,17 +94,16 @@ main{
     }
 }
 
-
 #index__h1{
     margin-left: 60px;
     padding-bottom: 0px;
-    font-size: 50pt;  
+    font-size: 60pt;  
 }
 
 #index__h2{
     color: $rojo;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 350;
     font-size: 40pt;
     margin-left: 60px;
 }
@@ -116,8 +116,10 @@ main{
 
     .index__bienvenida{
         background-color: $rosa;
-        opacity: 90%;
-        font-weight: 200;
+        background-image: url(/multimedia/fondo1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-weight: 350;
         @include tamaño(600px,500px);
         font-size: 25pt;
         margin: 0px;
@@ -131,31 +133,40 @@ main{
 
 .index--slide{
     padding-left: 150px;
-    width: 500px;
+    width: 550px;
 }
 
 .main__productos{
-    background-image: url(./multimedia/fondoshdos.jpg);
-    padding-bottom: 200px;
+    background-image: url(/multimedia/fondoshdos.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px 0px 80px 0px;
+    background-size: contain;
+    padding: 100px 0 0 0;
 
     .main__productos--grid{
         display: grid;
         grid-template-columns: 200px 200px;
         grid-template-rows: 350px;
-        grid-column-gap: 80px;
-        margin: 100px 400px;
-        
+        grid-column-gap: 150px;
+        margin: 125px 350px;
+
+        a{
+            color: $rojo;
+        }
+
+        img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
         title{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            margin: 0px;
+            justify-content: space-evenly;
+            margin-left: 18px;
             padding: 20px 50px;
             color: $rojo;
-            font-size: 25pt;
+            font-size: 30pt;
         }
     }
 
@@ -164,9 +175,9 @@ main{
     }
 
     .productos__descripcion{
+        background-image: url(/multimedia/fondo3.jpg);
 
         #foca{
-            background-color: $rosa;
             display: grid;
             grid-template-columns: 400px 300px;
             grid-template-rows: 350px;
@@ -176,7 +187,6 @@ main{
 
         #pan{
             @extend #foca;
-            background-color: none;
         }
 
         img{
@@ -184,7 +194,7 @@ main{
         }
 
         p{
-            font-weight: 200;
+            font-weight: 280;
             width: 40vw;
             height: 20vh;
             font-size: 15pt;
@@ -195,16 +205,19 @@ main{
 }
 
 .main__materiales{
-    background-image: url(./multimedia/fondoshdos.jpg);
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    padding: 50px 0px 80px 0px;
+    background-image: url(/multimedia/fondoshdos.jpg);
+    background-repeat: repeat-y;
+    background-size: contain; 
+    padding: 80px 0px 80px 0px;
+
+    .main__materiales--fotos{
+        margin: 50px 400px;
+        @include tamaño (40vh,30vw);
+    }
 
     #main__materiales--masama{
-        margin: 200px 100px 50px 100px;
+        margin: 200px 100px 50px 0px;
         padding: 0px 65px;
-
 
         h2{
             font-size: 25pt;
@@ -213,23 +226,17 @@ main{
         p{
             color: $rojo;
             font-size: 18pt; 
-            background-color:$rosa;
             font-weight: 200;
             width: 40vw;
             height: 55vh;
             overflow: auto;
+            background-image: url(/multimedia/fondo2.jpg);
+            background-size: contain;
         }
     }
 
-    .main__materiales--fotos{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        width: 100%;
-    }
-
     .main__materiales--texto{
-        margin: 50px 100px 50px 100px;
+        margin: 20px 100px 50px 500px;
         padding: 0px 65px;
 
         h2{
@@ -239,30 +246,31 @@ main{
         p{
             color: $rojo;
             font-size: 18pt; 
-            background-color:$rosa;
             font-weight: 200;
-            width: 60vw;
-            height: 20vh;
+            width: 38vw;
+            height: 30vh;
             overflow: auto;
+            background-image: url(/multimedia/fondo2.jpg);
+            background-size: contain;
+            
         }
     }
 }
 
 .main__quienes{
-    background-image: url(./multimedia/fondoshdos.jpg);
-    padding-bottom: 200px;
+    background-image: url(/multimedia/fondoshdos.jpg);
+    padding: 50px 0px 100px 0px;
     background-repeat: no-repeat;
     background-size: cover;
 
     h1{
         display: flex;
         justify-content: center;
-        margin: 0px 0px 0px 500px;
-        padding-top: 50px;
+        padding: 50px 0 80px 0;
     }
 
     img{
-        width: 30%;
+        height: 60vh;
     }
 
     .div__quienes{
@@ -274,20 +282,22 @@ main{
     }
     
     .div__quienes--texto{
-        border: solid 5px $rojo;
+        background-image: url(/multimedia/Fondo2.jpg);
+        background-size: contain;
         padding: 10px;
         margin-left: 50px;
         width: 50%;
     
         p{
-            color: black;
+            color: $rojo;
             font-size: 25pt;
+            font-weight: 350;
         }
     }
 }
 
 .main__contacto{
-    background-image: url(./multimedia/fondoshdos.jpg);
+    background-image: url(/multimedia/fondoshdos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -297,7 +307,7 @@ main{
     padding: 50px 0px 80px 0px;
 
     p{
-        font-size: 20pt;
+        font-size: 27pt;
     }
 
     .main__contacto--formulario{
@@ -344,7 +354,7 @@ footer{
                 color: $rosa;
                 font-weight: 300;
                 font-size: 20pt;
-                padding: 5px 0 20px 110px;
+                padding: 5px 80px 20px 200px;
             }
 
             .footer_icono{
@@ -378,10 +388,9 @@ footer{
     }
 } 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
     body{
-        background-color: $rosa;
-        width: 95vw;
+        width: 99.5vw;
         height: 95vh;
     }
 
@@ -405,163 +414,198 @@ footer{
     } 
 
     main{
-        background-image: none;
+        padding: 0;
 
         .logo{
-            display: none;
+            @include tamaño(40vh,80vw);
+            margin: 50px 40px;
         }
     }
 
     #index__h1{
         margin: 0;
+        font-size: 45pt;
     }
 
     #index__h2{
         margin: 0;
+        font-size: 35pt;
     }
 
     #index__main{
+        padding: 0;
     
         .index__bienvenida{
             width: 85vw;
-            height: 100vh;
-            margin: 50px 0px 50px 0px;
-            overflow: hidden;
-            font-size: 20pt;
+            height: 80vh;
+            margin: 50px 10px;
+            overflow: auto;
+
+            p{
+                padding: 15px;
+                font-size: 20pt;
+            }
         }
     }
     
     .index--slide{
-        margin: 50px 0px 100px 0px;
+        margin: 50px 10px 50px 10px;
         padding: 10px;
         width: 85vw;
         height: 85vh;
     }
 
     .main__productos{
-        background-image: none;
+        background-size: cover;
+        padding-top: 10px;
     
         .main__productos--grid{
             display: grid;
-            grid-template-columns: 150px 150px;
-            grid-template-rows: 35px;
-            grid-column-gap: 8px;
-            margin: 100px 0px 200px 10px;
+            grid-template-columns: 145px 145px;
+            grid-template-rows: 20px;
+            grid-column-gap: 20px;
+            margin: 100px 40px 0 40px;
+            padding:0 0 350px 0;
 
             h1{
                 font-size: 10pt;
+                padding-top: 50px;
             }
 
             img{
-                width: 40vw;
-                height: 40vh;
+                width: 38vw;
+                height: 24vh;
             }
             
-            title{
-                font-size: 15pt;
+            title{    
+                font-size: 20pt;
+                padding: 0 50px 0 35px;
+                margin: 0px;
             }
         }
 
         .productos__descripcion{
+            padding: 50px 0px 200px 0px;
 
             #foca{
                 display: grid;
-                grid-template-columns: 150px 50px;
+                grid-template-columns: 100px 50px;
                 grid-template-rows: 100px;
                 grid-column-gap: 50px;
-                margin-left: 10px;
-                padding: 100px 0;
+                margin-left: 5px;
+                padding: 200px 0;
                 
             }
     
             #pan{
                 display: grid;
-                grid-template-columns: 150px 50px;
+                grid-template-columns: 100px 50px;
                 grid-template-rows: 100px;
                 grid-column-gap: 50px;
-                margin-left: 10px;
-                padding: 100px 0;
+                margin-left: 5px;
+                padding: 100px 0 200px 0;
             }
     
             img{
-                width: 40vw;
-                height: 40vh;
+                @include tamaño(20vh,35vw);
+            }
+
+            p{
+                @include tamaño(30vh,50vw);
+                font-size: 18pt;
             }
         }
 
     }   
 
     .main__materiales{
-        background-image: none;
         margin: 0px;
         padding: 0;
 
         h1{
-            font-size: 30pt;
+            font-size: 35pt;
         }
 
         .main__materiales--fotos{
             width: 70vw;
-            height: 70vh;
-            margin: 0 0 500px 50px;
+            height: 50vh;
+            margin: 0 0 50px 50px;
         }
 
-        .main__materiales--texto{
+        #main__materiales--masama{
             margin: 0;
-            padding: 100px 0;
+            padding: 10px 0;
         
             p{
                 color: $rojo;
                 font-size: 15pt;
                 overflow: auto;
+                @include tamaño(80vh,90vw);
+                margin-left: 15px;
+            }
+        }
+
+        .main__materiales--texto{
+            margin: 0;
+            padding: 10px 0;
+
+            p{
+                color: $rojo;
+                font-size: 15pt;
+                overflow: auto;
+                @include tamaño(30vh,90vw);
+                margin-left: 15px;
             }
         }
     }
 
     .main__quienes{
-        background-image: none;
-        margin:0px;
-        padding: 0 0 100px 0;
+        padding: 0 0 50px 0;
 
         h1{
             display: flex;
             justify-content: center;
-            margin: 0px 0px 0px 200px;
-            padding-top: 50px;
-            font-size: 30pt;
-        }
-    
-        img{
-            width: 40vw;
+            margin: 0px;
+            padding: 50px 0 20px 0;
+            font-size: 35pt;
         }
     
         .div__quienes{
-            padding: 0px;
-            margin: 0px;
-        }
-        
-        .div__quienes--texto{
-            border: solid 5px $rojo;
-            padding: 10px;
-            margin-left: 10px;
-            width: 40vw;
-            height: 50vh;
-            overflow: auto;
-        
-            p{
-                font-size: 15pt;
+            padding: 20px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            margin: 0px 0px 0px 0px;
+
+            img{
+                width: 400px;
+                height: 400px;
+            }
+
+            .div__quienes--texto{
+                padding: 15px;
+                margin-right: 50px;
+                @include tamaño(380px,300px);
+                overflow: auto;
+            
+                p{
+                    font-size: 18pt;
+                }
             }
         }
-        
     }
 
     .main__contacto{
-        background-image: none;
         padding: 50px 0px 100px 0px;
-        margin-bottom: 100px;
 
         h1{
-            font-size: 30pt;
+            font-size: 35pt;
+        }
+
+        p{
+            font-size: 18pt;
+            font-weight: 500;
+            margin: 0 20px 20px 20px;
         }
 
         .main__contacto--formulario{
@@ -569,24 +613,53 @@ footer{
             color: $rosa;
             @include tamaño(900px,50vh);
             font-size: 16pt;
-            padding: 50px;
+            padding: 20px;
             overflow: hidden;
             animation-name: none;
         }
     }
 
     footer{
-        width: 95vw;
-    }
+        margin: 0px;
+    
+        #footer_contacto{
+            
+            #footer_mail{
 
+                h2{
+                    font-size: 20pt;
+                    justify-content: initial;
+                }
+    
+                p{
+                    font-size: 15pt;
+                    padding: 20px 0;
+                    margin-right: 100px;
+                    justify-content: initial;
+                }
+            }
+    
+            #footer_redes{
+    
+                h2 {
+                    font-size: 20pt;
+                    padding: 20px 0;
+                    justify-content: initial;
+                }
+
+                .footer_icono{
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px){
 
     body{
-        background-color: $rosa;
-        width: 95vw;
-        height: 95vh;
+        width: 100vw;
+        height: 100vh;
     }
 
     .header__menu{
@@ -596,6 +669,12 @@ footer{
         }
 
         #menu--responisve{
+            font-size: 30pt;
+
+            .d-inline-block{
+                @include tamaño(90px,90px)
+
+            }
 
             a{
                 color: $rojo;
@@ -609,15 +688,26 @@ footer{
     }
 
     main{
-        background-image: none;
+        .logo{
+            margin: 0 100px 10px 100px;
+            @include tamaño(50vh,65vw)
+        }
+
+        h1{
+            font-size: 55pt;
+        }
+
     }
 
     #index__h1{
-        margin: 0;
+        margin: 0 0 0 20px;
+        font-size: 60pt;
     }
 
     #index__h2{
-        margin: 0;
+        margin: 0 0 20px 35px;
+        font-size: 55pt;
+        font-weight: 300;
     }
 
     #index__main{
@@ -625,45 +715,42 @@ footer{
         .index__bienvenida{
             width: 85vw;
             height: 70vh;
-            margin: 0px;
-            overflow: hidden;
-            font-size: 20pt;
+            margin: 0 0 0 20px;
+            overflow: auto;
+            font-size: 33pt;
         }
     }
     
     .index--slide{
-        margin: 50px 0px 400px 0px;
+        margin: 60px 0px 300px 20px;
         padding: 10px;
-        width: 50vw;
+        width: 85vw;
         height: 50vh;
     }
 
     .main__productos{
-        background-image: none;
-    
+        background-size: cover;
+
         .main__productos--grid{
             display: grid;
             grid-template-columns: 200px 200px;
             grid-template-rows: 35px;
             grid-column-gap: 100px;
             margin: 80px 0px 200px 100px;
-
-            h1{
-                font-size: 20pt;
-            }
+            padding-bottom: 300px;
 
             img{
-                width: 30vw;
-                height: 30vh;
+                @include tamaño(20vh,28vw);
+                margin-left: 50px;
             }
             
             title{
-                font-size: 30pt;
+                font-size: 35pt;
+                margin: 0 0 0 55px;
             }
         }
 
         .productos__descripcion{
-            background-color: none;
             margin-top: 300px;
 
             #foca{
@@ -671,9 +758,12 @@ footer{
                 grid-template-columns: 150px 50px;
                 grid-template-rows: 100px;
                 grid-column-gap: 50px;
-                margin-left: 10px;
+                margin: 0 50px 100px 10px;
                 padding: 100px 0;
-                
+
+                .productos__descripcion--texto{
+                    margin-left: 50px;
+                }
             }
     
             #pan{
@@ -681,42 +771,120 @@ footer{
                 grid-template-columns: 150px 50px;
                 grid-template-rows: 100px;
                 grid-column-gap: 50px;
-                margin-left: 10px;
-                padding: 100px 0;
+                margin: 0 50px 0 10px;
+                padding: 100px 0 400px 0;
+
+                .productos__descripcion--texto{
+                    margin-left: 50px;
+                }
             }
     
             img{
-                width: 25vw;
-                height: 25vh;
+                @include tamaño(23vh,30vw);
+            }
+
+            h2{
+                font-size: 30pt;
             }
 
             p{
-                overflow: hidden;
-                width: 30vw;
-                height: 10vh;
+                overflow: auto;
+                @include tamaño(250px,400px);
+                font-size: 25pt;
             }
         }
 
     }   
 
     .main__materiales{
-        background-image: none;
+        margin: 0px;
+        padding: 55px 0 0 0;
+
+        .main__materiales--fotos{
+            @include tamaño(70vh,50vw);
+            margin: 50px 155px 0px 155px;
+        }
+
+        #main__materiales--masama{
+            margin: 0 10px;
+            padding: 10px 0;
+
+            h2{
+                font-size: 38pt;
+            }
+        
+            p{
+                color: $rojo;
+                font-size: 24pt;
+                overflow: auto;
+                @include tamaño(80vh,90vw);
+            }
+        }
+
+        .main__materiales--texto{
+            margin: 0 10px 200px 10px;
+            padding: 10px 0;
+
+            h2{
+                font-size: 38pt;
+            }
+
+            p{
+                color: $rojo;
+                font-size: 24pt;
+                overflow: auto;
+                @include tamaño(20vh,90vw);
+            }
+        }
     }
 
     .main__quienes{
-        background-image: none;
+        padding: 50px 0;
+
+        h1{
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            padding: 50px 0 20px 0;
+        }
+    
+        .div__quienes{
+            padding: 20px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            margin: 0;
+
+            img{
+                @include tamaño(500px,500px);
+            }
+
+            .div__quienes--texto{
+                margin: 0 20px 150px 20px;
+                @include tamaño(400px,550px);
+                overflow: auto;
+            
+                p{
+                    font-size: 25pt;
+                    padding: 10px;
+                    font-weight: 300;
+                }
+            }
+        }
     }
 
     .main__contacto{
-        background-image: none;
-        padding: 50px 0px 100px 0px;
-        margin-bottom: 100px;
+        padding: 50px 0px 300px 0px;
+
+        p{
+            font-size: 27pt;
+        }
     
         .main__contacto--formulario{
             background-color: $rojo;
             color: $rosa;
-            @include tamaño(900px,50vh);
-            font-size: 16pt;
+            @include tamaño(120vh,80vw);
+            font-size: 22pt;
             padding: 50px;
             overflow: hidden;
             animation-name: none;
@@ -724,6 +892,30 @@ footer{
     }
 
     footer{
-        width: 95vw;
+        margin: 0px;
+    
+        #footer_contacto{
+            
+            #footer_mail{
+
+                h2{
+                    font-size: 21pt;
+                }
+    
+                p{
+                    padding: 20px 15px;
+                    margin: 0px;
+                    font-size: 18pt;
+                }
+            }
+    
+            #footer_redes{
+    
+                h2 {
+                    padding: 20px 70px;
+                    font-size: 21pt;
+                }
+            }
+        }
     }
 }

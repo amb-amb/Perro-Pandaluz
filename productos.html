@@ -27,6 +27,9 @@
                         <li> <a href="materiales.html"> Materiales</a></li>
                         <li> <a href="quienes-somos.html"> Quienes somos</a></li>
                         <li> <a href="contacto.html"> Contacto</a></li>
+                        <li><a class="navbar-brand" href="index.html">
+                            <img src="./multimedia/PanGIF2.gif" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+                        </a></li>
                     </ul>
                 </div>
                 <div class="header__menu--responsive">
@@ -35,7 +38,8 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                            <a class="navbar-brand" href="index.html"><img src="/multimedia/focacciagif.gif" width="50" height="50" class="d-inline-block align-top" alt="Logo"></a>
+                            <a class="navbar-brand" href="index.html"><img src="./multimedia/focacciagif.gif" width="50" height="50" class="d-inline-block align-top" alt="Logo"></a>
+                            <a class="navbar-brand" href="index.html"><img src="./multimedia/PanGIF2.gif" width="50" height="50" class="d-inline-block align-top" alt="Logo"></a>
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0 flex-column">
                                 <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
@@ -60,30 +64,36 @@
         </div>
     </header>
     <main class="main__productos">
-        <h1 class="titulos">Productos</h1>
+        <h1 class="titulos" id="top">Productos</h1>
         <div class="main__productos--grid"> 
                 <div>
-                    <img src="multimedia/prod1.jpg" alt="Mano focaccia" class="productos-img">
+                    <img src="multimedia/prod1.jpg" alt="Mano focaccia">
                     <a href="#foca"><title>Focaccias</title></a>
                 </div>
                 <div>
-                    <img src="multimedia/prod2.jpg" alt="Mano centeno" class="productos-img">
+                    <img src="multimedia/prod2.jpg" alt="Mano centeno">
                     <a href="#pan"><title>Panes</title></a>
                 </div>
         </div>
         <section class="productos__descripcion">
         <div id="foca">
-            <img src="./multimedia/focafoca.jpg" alt="Focaccia">
-            <div>
+            <img src="./multimedia/focafoca.png" alt="Focaccia">
+            <div class="productos__descripcion--texto">
                 <h2>Focaccia</h2>
-                <p>Descripcion del producto</p>
+                <p>Las focaccias de masa madre que ofrecemos están hechas con harinas orgánicas de trigo, 
+                    un toque de aceite y sal marina. Tenemos variedades de harina blanca y semi-integrales, 
+                    con tomates cherries, cebolla, aceitunas negras o romero y sal.
+                </p>
+                <a href="#top"><button type="button" class="btn btn-outline-dark">Volver</button></a>
             </div>
         </div>
         <div id="pan">
-            <img src="./multimedia/panpan.jpg" alt="Focaccia">
-            <div>
+            <img src="./multimedia/panpan.png" alt="Focaccia">
+            <div class="productos__descripcion--texto">
                 <h2>Pan de Centeno</h2>
-                <p>Descripcion del producto</p>
+                <p>Nuestro pan de centeno de masa madre está hecho con 100% harina de centeno integral orgánico, 
+                   semillas de girasol, semillas de hinojo, un toque de miel y sal marina. <br>Los tamaños son 20cm y 30cm. </p>
+                <a href="#top"><button type="button" class="btn btn-outline-dark">Volver</button></a>
             </div>
         </div>
         </section>
