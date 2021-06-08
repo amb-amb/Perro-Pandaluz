@@ -77,7 +77,7 @@ main {
   padding: 50px 0px 80px 0px; }
   #index__main .index__bienvenida {
     background-color: #f6e1dc;
-    background-image: url(./multimedia/fondo1.jpg);
+    background-image: url(/multimedia/fondo1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     font-weight: 350;
@@ -94,7 +94,7 @@ main {
   width: 550px; }
 
 .main__productos {
-  background-image: url(./multimedia/fondoshdos.jpg);
+  background-image: url(/multimedia/fondoshdos.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   padding: 100px 0 0 0; }
@@ -121,7 +121,7 @@ main {
   .main__productos img {
     width: 100%; }
   .main__productos .productos__descripcion {
-    background-image: url(./multimedia/fondo3.jpg); }
+    background-image: url(/multimedia/fondo3.jpg); }
     .main__productos .productos__descripcion #foca, .main__productos .productos__descripcion #pan {
       display: grid;
       grid-template-columns: 400px 300px;
@@ -139,7 +139,7 @@ main {
       color: #C3391A; }
 
 .main__materiales {
-  background-image: url(./multimedia/fondoshdos.jpg);
+  background-image: url(/multimedia/fondoshdos.jpg);
   background-repeat: repeat-y;
   background-size: contain;
   padding: 80px 0px 80px 0px; }
@@ -159,7 +159,7 @@ main {
       width: 40vw;
       height: 55vh;
       overflow: auto;
-      background-image: url(./multimedia/fondo2.jpg);
+      background-image: url(/multimedia/fondo2.jpg);
       background-size: contain; }
   .main__materiales .main__materiales--texto {
     margin: 20px 100px 50px 500px;
@@ -173,11 +173,11 @@ main {
       width: 38vw;
       height: 30vh;
       overflow: auto;
-      background-image: url(./multimedia/fondo2.jpg);
+      background-image: url(/multimedia/fondo2.jpg);
       background-size: contain; }
 
 .main__quienes {
-  background-image: url(./multimedia/fondoshdos.jpg);
+  background-image: url(/multimedia/fondoshdos.jpg);
   padding: 50px 0px 100px 0px;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -194,7 +194,7 @@ main {
     align-items: center;
     padding: 0px 0px 80px 0px; }
   .main__quienes .div__quienes--texto {
-    background-image: url(./multimedia/Fondo2.jpg);
+    background-image: url(/multimedia/Fondo2.jpg);
     background-size: contain;
     padding: 10px;
     margin-left: 50px;
@@ -205,7 +205,7 @@ main {
       font-weight: 350; }
 
 .main__contacto {
-  background-image: url(./multimedia/fondoshdos.jpg);
+  background-image: url(/multimedia/fondoshdos.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

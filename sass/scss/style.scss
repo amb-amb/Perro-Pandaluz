@@ -116,7 +116,7 @@ main{
 
     .index__bienvenida{
         background-color: $rosa;
-        background-image: url(./multimedia/fondo1.jpg);
+        background-image: url(/multimedia/fondo1.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         font-weight: 350;
@@ -137,7 +137,7 @@ main{
 }
 
 .main__productos{
-    background-image: url(./multimedia/fondoshdos.jpg);
+    background-image: url(/multimedia/fondoshdos.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     padding: 100px 0 0 0;
@@ -175,7 +175,7 @@ main{
     }
 
     .productos__descripcion{
-        background-image: url(./multimedia/fondo3.jpg);
+        background-image: url(/multimedia/fondo3.jpg);
 
         #foca{
             display: grid;
@@ -205,7 +205,7 @@ main{
 }
 
 .main__materiales{
-    background-image: url(./multimedia/fondoshdos.jpg);
+    background-image: url(/multimedia/fondoshdos.jpg);
     background-repeat: repeat-y;
     background-size: contain; 
     padding: 80px 0px 80px 0px;
@@ -230,7 +230,7 @@ main{
             width: 40vw;
             height: 55vh;
             overflow: auto;
-            background-image: url(./multimedia/fondo2.jpg);
+            background-image: url(/multimedia/fondo2.jpg);
             background-size: contain;
         }
     }
@@ -250,7 +250,7 @@ main{
             width: 38vw;
             height: 30vh;
             overflow: auto;
-            background-image: url(./multimedia/fondo2.jpg);
+            background-image: url(/multimedia/fondo2.jpg);
             background-size: contain;
             
         }
@@ -258,7 +258,7 @@ main{
 }
 
 .main__quienes{
-    background-image: url(./multimedia/fondoshdos.jpg);
+    background-image: url(/multimedia/fondoshdos.jpg);
     padding: 50px 0px 100px 0px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -282,7 +282,7 @@ main{
     }
     
     .div__quienes--texto{
-        background-image: url(./multimedia/Fondo2.jpg);
+        background-image: url(/multimedia/Fondo2.jpg);
         background-size: contain;
         padding: 10px;
         margin-left: 50px;
@@ -297,7 +297,7 @@ main{
 }
 
 .main__contacto{
-    background-image: url(./multimedia/fondoshdos.jpg);
+    background-image: url(/multimedia/fondoshdos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
